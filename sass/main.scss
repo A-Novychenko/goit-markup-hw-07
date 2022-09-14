@@ -1,1 +1,23 @@
-@import './utils/variables';
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/title";
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/social-net-list";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+
+@import "./layout/page-header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/page-footer";
+@import "./layout/portfolio";
