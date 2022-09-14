@@ -14,10 +14,10 @@
 
 .modal-form-label {
   margin-bottom: 10px;
-}
 
-.modal-form-label:nth-child(4) {
-  margin-bottom: 20px;
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
 }
 
 .modal-form-field-descr {
@@ -46,11 +46,11 @@
 
   color: var(--black-color);
   transition: border-color var(--animation);
-}
 
-.modal-form-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .modal-form-icon {
@@ -60,10 +60,10 @@
   transform: translateY(-50%);
 
   transition: fill var(--animation);
-}
 
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  &:focus + .modal-form-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-coment {
@@ -76,19 +76,19 @@
   color: var(--black-color);
 
   transition: border-color var(--animation);
-}
 
-.modal-form-coment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
-}
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.modal-form-coment:focus {
-  border-color: var(--accent-color);
-  outline: none;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .modal-form-label-chekbox {
@@ -111,14 +111,14 @@
 .modal-form-checkbox {
   position: absolute;
   appearance: none;
+
+  &:focus + .modal-form-check-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-check-icon {
   transition: fill var(--animation);
-}
-
-.modal-form-checkbox:focus + .modal-form-check-icon {
-  fill: var(--accent-color);
 }
 
 .modal-form-check-icon-checked {

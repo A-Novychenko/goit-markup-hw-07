@@ -112,6 +112,9 @@ img {
   color: var(--white-color);
   transition: background-color var(--animation);
 }
+.btn.primary:hover, .btn.primary:focus {
+  background-color: var(--btn-bgc-accent);
+}
 
 .btn.secondary {
   padding: 6px 22px;
@@ -120,14 +123,7 @@ img {
   transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
   /* box-shadow - для btn-filter */
 }
-
-.btn.primary:hover,
-.btn.primary:focus {
-  background-color: var(--btn-bgc-accent);
-}
-
-.btn.secondary:hover,
-.btn.secondary:focus {
+.btn.secondary:hover, .btn.secondary:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
@@ -251,7 +247,6 @@ img {
 .modal-form-label {
   margin-bottom: 10px;
 }
-
 .modal-form-label:nth-child(4) {
   margin-bottom: 20px;
 }
@@ -279,7 +274,6 @@ img {
   color: var(--black-color);
   transition: border-color var(--animation);
 }
-
 .modal-form-input:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -292,8 +286,7 @@ img {
   transform: translateY(-50%);
   transition: fill var(--animation);
 }
-
-.modal-form-input:focus + .modal-form-icon {
+.modal-form-icon:focus + .modal-form-icon {
   fill: var(--accent-color);
 }
 
@@ -307,14 +300,12 @@ img {
   color: var(--black-color);
   transition: border-color var(--animation);
 }
-
 .modal-form-coment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-form-coment:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -340,13 +331,12 @@ img {
   position: absolute;
   appearance: none;
 }
+.modal-form-checkbox:focus + .modal-form-check-icon {
+  fill: var(--accent-color);
+}
 
 .modal-form-check-icon {
   transition: fill var(--animation);
-}
-
-.modal-form-checkbox:focus + .modal-form-check-icon {
-  fill: var(--accent-color);
 }
 
 .modal-form-check-icon-checked {
