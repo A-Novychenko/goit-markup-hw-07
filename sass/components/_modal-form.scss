@@ -61,7 +61,7 @@
 
   transition: fill var(--animation);
 
-  &:focus + .modal-form-icon {
+  .modal-form-input:focus + & {
     fill: var(--accent-color);
   }
 }
@@ -77,17 +77,17 @@
 
   transition: border-color var(--animation);
 
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+
   &::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
-  }
-
-  &:focus {
-    border-color: var(--accent-color);
-    outline: none;
   }
 }
 
@@ -111,14 +111,14 @@
 .modal-form-checkbox {
   position: absolute;
   appearance: none;
-
-  &:focus + .modal-form-check-icon {
-    fill: var(--accent-color);
-  }
 }
 
 .modal-form-check-icon {
   transition: fill var(--animation);
+
+  .modal-form-checkbox:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-check-icon-checked {
@@ -135,24 +135,20 @@
   visibility: hidden;
 
   transition: opacity var(--animation), visibility var(--animation);
-}
 
-.modal-form-checkbox:checked
-  ~ .modal-form-check-icon-checked
-  .modal-form-check-icon-accent {
-  opacity: 1;
-  visibility: visible;
+  .modal-form-checkbox:checked ~ .modal-form-check-icon-checked & {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .modal-form-check-icon-no-check {
   transition: opacity var(--animation), visibility var(--animation);
-}
 
-.modal-form-checkbox:checked
-  + .modal-form-check-icon
-  .modal-form-check-icon-no-check {
-  opacity: 0;
-  visibility: hidden;
+  .modal-form-checkbox:checked + .modal-form-check-icon & {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .modal-form-descr-check {

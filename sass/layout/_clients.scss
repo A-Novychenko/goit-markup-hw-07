@@ -14,19 +14,19 @@
   border: 1px solid #afb1b8;
 
   transition: border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .clients-icon {
   fill: #afb1b8;
   transition: fill var(--animation);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--accent-color);
+  }
 }

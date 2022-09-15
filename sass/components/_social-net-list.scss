@@ -14,20 +14,20 @@
   border-radius: 50%;
 
   transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .social-net-icon {
   fill: #afb1b8;
 
   transition: fill var(--animation);
-}
 
-.social-net-link:hover,
-.social-net-link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-net-link:hover .social-net-icon,
-.social-net-link:focus .social-net-icon {
-  fill: var(--white-color);
+  .social-net-link:hover &,
+  .social-net-link:focus & {
+    fill: var(--white-color);
+  }
 }

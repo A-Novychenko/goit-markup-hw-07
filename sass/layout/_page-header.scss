@@ -21,8 +21,10 @@
   margin-left: 93px;
 }
 
-.site-nav-item:not(:last-child) {
-  margin-right: 50px;
+.site-nav-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav-link {
