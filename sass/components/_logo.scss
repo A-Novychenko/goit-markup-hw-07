@@ -1,11 +1,15 @@
 .logo {
-  color: var(--black-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-
-.logo-accent {
+.logo_accent {
   color: var(--accent-color);
+}
+.logo_theme_light {
+  color: var(--primary-color);
+}
+.logo_theme_dark {
+  color: var(--white-color);
 }
