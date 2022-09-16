@@ -1,11 +1,11 @@
-.social-net-list {
+.social-networks {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
 }
 
-.social-net-link {
+.social-networks__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -21,13 +21,13 @@
   }
 }
 
-.social-net-icon {
+.social-networks__icon {
   fill: #afb1b8;
 
   transition: fill var(--animation);
 
-  .social-net-link:hover &,
-  .social-net-link:focus & {
+  .social-networks__link:hover &,
+  .social-networks__link:focus & {
     fill: var(--white-color);
   }
 }
