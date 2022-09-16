@@ -3,13 +3,20 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-.logo_accent {
   color: var(--accent-color);
 }
-.logo_theme_light {
+.logo_verticals-paddings {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo_margin-bottom {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo_dark-theme {
   color: var(--primary-color);
 }
-.logo_theme_dark {
+.logo_light-theme {
   color: var(--white-color);
 }
