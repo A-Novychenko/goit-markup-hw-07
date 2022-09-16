@@ -18,11 +18,12 @@
 <body>
     <!-- header -->
 
+    </header>
     <header class="page-header">
         <div class="container page-header__wrapper">
             <nav class="site-nav">
-                <a class="logo link page-header__logo logo_theme_light" href="./index.html">
-                    <span class="logo_accent">Web</span>Studio
+                <a class="logo link logo_verticals-paddings" href="./index.html">
+                    Web<span class="logo logo_dark-theme">Studio</span>
                 </a>
                 <ul class="list site-nav__list">
                     <li class="site-nav__item">
@@ -32,7 +33,7 @@
                         <a class="link site-nav__link site-nav__link_current" href="./portfolio.html">Портфоліо</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="link site-nav__link" href="">Контакти</a>
+                        <a class="link site-nav__link" href="#contacts">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -220,72 +221,75 @@
 
     <!-- footer -->
     <footer class="page-footer">
-        <div class="container footer-position">
-            <div class="footer-adress">
-                <a class="logo logo_theme_dark page-header__logo link" href="./index.html">
-                    <span class="logo_accent">Web</span>Studio
+        <div class="container page-footer__wrapper">
+            <div id="contacts" class="page-footer__address-box">
+                <a class="logo link logo_margin-bottom" href="./index.html">
+                    Web<span class="logo logo_light-theme">Studio</span>
                 </a>
-                <address class="address-footer">
-                    <ul class="list">
-                        <li class=" contacts-item">
-                            <a class="address-link link" href="https://goo.gl/maps/zaocLffD8GGZKToq6" target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки,
+                <address class="page-footer__address">
+                    <ul class="list page-footer__list">
+                        <li class=" page-footer__item">
+                            <a class="page-footer__link link" href="https://goo.gl/maps/zaocLffD8GGZKToq6"
+                                target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки,
                                 26</a>
                         </li>
-                        <li class=" contacts-item">
-                            <a class="contacts-footer link" href="mailto:info@example.com">info@example.com</a>
+                        <li class=" page-footer__item">
+                            <a class="page-footer__link page-footer__link_white link"
+                                href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class=" contacts-item">
-                            <a class="contacts-footer link" href="tel:+380991111111">+38 099 111 11
+                        <li class=" page-footer__item">
+                            <a class="page-footer__link page-footer__link_white link" href="tel:+380991111111">+38 099
+                                111 11
                                 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
 
-            <div class="social-net-footer">
-                <strong class="footer-title">приєднуйтесь</strong>
-                <ul class="social-net-list list">
-                    <li class="social-net-item">
-                        <a href="" class="social-net-link footer-social-net-link">
-                            <svg lang="en" aria-label="istagram icon" class="social-net-icon footer-social-net-icon"
-                                width="20" height="20">
+            <div class="page-footer__social-box">
+                <strong class="page-footer__text">приєднуйтесь</strong>
+                <ul class="social-networks list">
+                    <li class="social-networks__item">
+                        <a href="" class="social-networks__link social-networks__link_gray-background">
+                            <svg lang="en" aria-label="istagram icon"
+                                class="social-networks__icon social-networks__icon-white" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-net-item">
-                        <a href="" class="social-net-link footer-social-net-link">
-                            <svg lang="en" aria-label="twitter icon" class="social-net-icon footer-social-net-icon"
-                                width="20" height="20">
+                    <li class="social-networks__item">
+                        <a href="" class="social-networks__link social-networks__link_gray-background">
+                            <svg lang="en" aria-label="twitter icon"
+                                class="social-networks__icon social-networks__icon-white" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-net-item">
-                        <a href="" class="social-net-link footer-social-net-link">
-                            <svg lang="en" aria-label="facebook icon" class="social-net-icon footer-social-net-icon"
-                                width="20" height="20">
+                    <li class="social-networks__item">
+                        <a href="" class="social-networks__link social-networks__link_gray-background">
+                            <svg lang="en" aria-label="facebook icon"
+                                class="social-networks__icon social-networks__icon-white" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-net-item">
-                        <a href="" class="social-net-link footer-social-net-link">
-                            <svg lang="en" aria-label="linkedin icon" class="social-net-icon footer-social-net-icon"
-                                width="20" height="20">
+                    <li class="social-networks__item">
+                        <a href="" class="social-networks__link social-networks__link_gray-background">
+                            <svg lang="en" aria-label="linkedin icon"
+                                class="social-networks__icon social-networks__icon-white" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
-                <strong class="footer-title">Підпишіться на розсилку</strong>
-                <form class="footer-form-field">
-                    <input class="footer-input-mail" type="email" placeholder="E-mail">
-                    <button class="btn primary btn-footer" type="submit">Підписатися
-                        <svg class="btn-footer-icon" width="24" height="24">
+
+            <div class="page-footer__form-box">
+                <strong class="page-footer__text">Підпишіться на розсилку</strong>
+                <form class="subscription-form">
+                    <input class="subscription-form__input" type="email" placeholder="E-mail">
+                    <button class="btn btn_primary subscription-form__btn" type="submit">Підписатися
+                        <svg class="subscription-form__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
