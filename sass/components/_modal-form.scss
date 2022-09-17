@@ -1,4 +1,4 @@
-.modal-title {
+.modal-form__title {
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-.modal-form-label {
+.modal-form__field {
   margin-bottom: 10px;
 
   &:nth-child(4) {
@@ -20,7 +20,7 @@
   }
 }
 
-.modal-form-field-descr {
+.modal-form__label {
   display: block;
   margin-bottom: 4px;
 
@@ -31,12 +31,12 @@
   color: var(--secondary-color);
 }
 
-.modal-form-wrapper {
+.modal-form__wrapper {
   position: relative;
   display: block;
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -53,7 +53,7 @@
   }
 }
 
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -61,12 +61,12 @@
 
   transition: fill var(--animation);
 
-  .modal-form-input:focus + & {
+  .modal-form__input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-form-coment {
+.modal-form__comment {
   width: 100%;
   height: 120px;
   padding: 12px;
@@ -91,7 +91,7 @@
   }
 }
 
-.modal-form-label-chekbox {
+.modal-form__chekbox-field {
   display: flex;
   align-items: center;
   width: 423px;
@@ -100,7 +100,7 @@
   margin-left: auto;
 }
 
-.modal-form-checkbox-wrapper {
+.modal-form__checkbox-wrapper {
   position: relative;
 
   display: flex;
@@ -108,20 +108,20 @@
   margin-right: 7px;
 }
 
-.modal-form-checkbox {
+.modal-form__checkbox {
   position: absolute;
   appearance: none;
 }
 
-.modal-form-check-icon {
+.modal-form__check-own-icon {
   transition: fill var(--animation);
 
-  .modal-form-checkbox:focus + & {
+  .modal-form__checkbox:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-form-check-icon-checked {
+.modal-form__check-own-icon_checked {
   position: absolute;
   width: 16px;
   height: 15px;
@@ -130,38 +130,36 @@
   transform: translateY(-50%);
 }
 
-.modal-form-check-icon-accent {
+.modal-form__check-icon_checked {
   opacity: 0;
   visibility: hidden;
 
   transition: opacity var(--animation), visibility var(--animation);
 
-  .modal-form-checkbox:checked ~ .modal-form-check-icon-checked & {
+  .modal-form__checkbox:checked ~ .modal-form__check-own-icon_checked & {
     opacity: 1;
     visibility: visible;
   }
 }
 
-.modal-form-check-icon-no-check {
+.modal-form__check-icon {
   transition: opacity var(--animation), visibility var(--animation);
 
-  .modal-form-checkbox:checked + .modal-form-check-icon & {
+  .modal-form__checkbox:checked + .modal-form__check-own-icon & {
     opacity: 0;
     visibility: hidden;
   }
 }
 
-.modal-form-descr-check {
+.modal-form__text {
   line-height: 1.71;
   color: var(--secondary-color);
 }
 
-.polisy-link {
+.modal-form__link {
   color: var(--accent-color);
 }
 
-.modal-btn-submit {
-  min-width: 200px;
-  min-height: 50px;
+.modal-form__btn {
   align-self: center;
 }

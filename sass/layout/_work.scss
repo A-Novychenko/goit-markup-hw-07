@@ -2,17 +2,17 @@
   padding-top: 0;
 }
 
-.work-list {
+.work__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.work-item {
+.work__item {
   position: relative;
 }
 
-.work-item-name {
+.work__text {
   position: absolute;
   left: 0;
   bottom: 0;
