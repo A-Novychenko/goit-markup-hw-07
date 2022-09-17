@@ -25,9 +25,7 @@
 }
 
 .subscription-form__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
