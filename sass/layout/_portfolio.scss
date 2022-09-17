@@ -38,7 +38,7 @@
   overflow: auto;
   background-color: rgba(33, 150, 243, 0.9);
 
-  @include font(28px, 18px);
+  @include font(18px, 28px);
   color: var(--white-color);
 
   transform: translateY(100%);
